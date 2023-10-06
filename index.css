@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    --primary-light-color: #fff;
+    --secondary-gray-color: #424242
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.button {
+    display: inline-block;
+    padding: 10px;
+    background: #5E2281;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.button-primary {
+    text-decoration: none;
+    cursor: pointer;
+    color: white; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    line-height: 23px; 
+    letter-spacing: 0.50px; 
+    word-wrap: break-word
+}

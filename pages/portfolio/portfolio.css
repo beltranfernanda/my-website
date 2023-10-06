@@ -1,0 +1,36 @@
+#root {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    height: 100vh;
+}
+
+main {
+    background: #E3E6E8;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 100%;
+    overflow: scroll;
+}
+
+header{
+    grid-column: 1/-1;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: var(--secondary-gray-color);
+}
+
+.header__title {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 4.80px;
+}
+
+.cards__container {
+    display: grid;
+}
+
+@media only screen and (max-width: 1024px) {
+    #root {
+        grid-template-columns: 100vw;
+    }    
+}
