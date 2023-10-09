@@ -1,0 +1,119 @@
+#root {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    height: 100vh;
+}
+
+main {
+    background: #E3E6E8;
+    display: grid;
+    grid-template-columns: auto;
+    height: 100%;
+    overflow: scroll;
+    justify-items: center;
+    align-content: center;
+}
+
+header{
+    grid-column: 1/-1;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: var(--secondary-gray-color);
+}
+
+.form {
+    display: grid;
+    background: var(--primary-light-color);
+    border-radius: 20px;
+    padding: 35px;
+}
+
+.form__title {
+    text-align: center;
+    color: var(--secondary-gray-color);
+    font-size: 1.75rem;
+    font-family: Nunito;
+    font-weight: 700;
+    letter-spacing: 2.80px;
+    margin-bottom: 2.5rem;;
+}
+
+.header__title {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 4.80px;
+}
+
+.form__input {
+    display: inherit;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.form__input input{
+    border: none;
+    border-bottom: 1px solid var(--input-color);
+    height: 3rem;
+    font-size: 1rem;
+    padding: 1rem 0 0 0.5rem;
+    color: var(--secondary-gray-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form__input input::placeholder {
+    color: var(--input-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form__input input:focus {
+    border-bottom: 2px solid #AE59BE;
+    outline: none;
+}
+
+.form__input label {
+    position: absolute;
+    top: 1.5rem;
+    left: 0.5rem;
+    color: var(--input-color);
+    transition: all 0.5s ease;
+}
+
+.form__input input:focus + label, 
+.form__input input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 0.9rem;
+    color: #AE59BE; 
+}
+
+.form__input input:not(:focus):not(:placeholder-shown) + label {
+    color: var(--input-color);
+}
+
+.form__span {
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word;
+    color: var(--input-color);
+    position: absolute;
+    top: -8px;
+}
+
+.form__message textarea{
+    border-radius: 6px;
+    border-color: var(--input-color);
+    font-size: 1rem;
+    padding: 1rem 0 0 0.5rem;
+    color: var(--secondary-gray-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form__message textarea::placeholder {
+    color: var(--input-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form__message textarea:focus {
+    outline: 2px solid #AE59BE;
+}

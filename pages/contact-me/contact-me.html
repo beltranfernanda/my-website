@@ -12,9 +12,37 @@
 
     </head>
     <body>
-        <main>
-            <aside-navbar></aside-navbar>
-        </main>
+        <div id="root">
+            <aside-navbar tab-active="contact"></aside-navbar>
+            <main>
+                <header>
+                    <h1 class="header__title">Contact Me</h1>
+                </header>
+                <form action="">
+                    <div class="form">
+                        <h2 class="form__title">Send me a message</h2>
+                        <div class="form__input form__name">
+                            <input type="text" id="name" placeholder="" name="name">
+                            <label for="name">Your name</label>
+                        </div>
+                        <div class="form__input form__email">
+                            <input type="text" id="email"  placeholder="" name="email">
+                            <label for="email">Your email</label>
+                        </div>
+                        <div class="form__input form__phone">
+                            <input type="text" id="phone" placeholder="" name="phone">
+                            <label for="phone">Your phone</label>
+                        </div>
+                        <div class="form__message">
+                            <textarea class="form__input" placeholder="Your message goes here ..." id="message" name="message" rows="8" 
+                            cols="50"></textarea>
+                        </div>
+                        <button-primary text="Send message"></button-primary>
+                    </div>
+                </form>
+            </main>
+        </div>
     </body>
+    <script src="../../components/button/button.js" type="module"></script>
     <script src="../../components/navbar/navbar.js" type="module"></script>
 </html>

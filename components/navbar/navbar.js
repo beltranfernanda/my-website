@@ -1,6 +1,14 @@
 import { getAbsoluteURL } from "../../common/util.js";
 
 class Navbar extends HTMLElement {
+
+  linksMap = {
+    about: "about-link",
+    portfolio: "portfolio-link",
+    blog: "blog-link",
+    contact: "contact-link"
+  }
+
   constructor() {
     super();
     this.component = `
@@ -17,47 +25,47 @@ class Navbar extends HTMLElement {
             <nav class="aside__menu">
                 <ul class="aside__menu__list">
                     <li class="aside__menu__list__item">
-                        <a  class= "aside__menu__list__link" href="${getAbsoluteURL(
+                        <a  id="about-link" class= "aside__menu__list__link" href="${getAbsoluteURL(
                           "pages/about/about.html"
                         )}">About</a>
                     </li>
                     <li class="aside__menu__list__item">
-                        <a class= "aside__menu__list__link active" href="${getAbsoluteURL(
+                        <a id="portfolio-link" class= "aside__menu__list__link" href="${getAbsoluteURL(
                           "pages/portfolio/portfolio.html"
                         )}">Portfolio</a>
                     </li>
                     <li class="aside__menu__list__item">
-                        <a class= "aside__menu__list__link" href="${getAbsoluteURL(
+                        <a  id="blog-link" class= "aside__menu__list__link" href="${getAbsoluteURL(
                           "pages/blog/blog.html"
                         )}">Blog</a>
                     </li>
                     <li class="aside__menu__list__item">
-                        <a class= "aside__menu__list__link" href="${getAbsoluteURL(
+                        <a id="contact-link" class= "aside__menu__list__link" href="${getAbsoluteURL(
                           "pages/contact-me/contact-me.html"
                         )}">Contact me</a>
                     </li>
                 </ul>
             </nav>
             <div class="aside__icons">
-                <a href="" class="aside__icons__link">
+                <a href="https://www.linkedin.com/in/beltranfernanda" target="_blank" class="aside__icons__link">
                     <img src="${getAbsoluteURL(
                       "assets/linkedin-logo.svg"
-                    )}"alt="" class="aside__icons__link__linkedin">
+                    )}"alt="linkedin icon" class="aside__icons__link__linkedin">
                 </a>
-                <a href="" class="aside__icons__link">
+                <a href="https://www.instagram.com/beltranmafe" target="_blank" class="aside__icons__link">
                     <img src="${getAbsoluteURL(
                       "assets/instagram.svg"
-                    )}" alt="" class="aside__icons__insta">
+                    )}" alt="instagram icon" class="aside__icons__insta">
                 </a>
-                <a href="" class="aside__icons__link">
+                <a href="https://github.com/beltranfernanda" target="_blank" class="aside__icons__link">
                     <img src="${getAbsoluteURL(
                       "assets/github-mark.svg"
-                    )}" alt="" class="aside__icons__github">
+                    )}" alt="github icon" class="aside__icons__github">
                 </a>
-                <a href="" class="aside__icons__link">
+                <a href="mailto:velandiafernanda17@gmail.com" class="aside__icons__link">
                     <img src="${getAbsoluteURL(
                       "assets/mail.svg"
-                    )}" alt="" class="aside__icons__mail">
+                    )}" alt="mail icon" class="aside__icons__mail">
                 </a>
             </div>
         </aside>
@@ -67,6 +75,15 @@ class Navbar extends HTMLElement {
         `;
     this.innerHTML = this.component;
   }
+
+  connectedCallback() {
+    if (this.hasAttribute("tab-active")){
+      let active = this.getAttribute("tab-active")
+      let id = this.linksMap[active]
+      this.querySelector("#" + id).classList.add("active")
+    }
+  }
+  
 }
 
 customElements.define("aside-navbar", Navbar);

@@ -8,9 +8,6 @@ class Button extends HTMLElement {
     connectedCallback() {
         const shadow = this.attachShadow({ mode: "open" });
     
-        // const container = document.createElement("div");
-        // container.setAttribute("class", "button")
-    
         let button;
     
         if (this.hasAttribute("type") && this.getAttribute("type")=="link"){
@@ -23,12 +20,12 @@ class Button extends HTMLElement {
         
         button.textContent = this.hasAttribute("text") ? this.getAttribute("text") : "default"
         button.setAttribute("class", "button button-primary")
+        button.setAttribute("type", "submit")
     
         const style = document.createElement("style");
         style.textContent = `@import url(${getAbsoluteURL("components/button/button.css")});`
     
         shadow.appendChild(style)
-        // container.appendChild(button)
         shadow.appendChild(button)
       }
   }

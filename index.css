@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     --primary-light-color: #fff;
-    --secondary-gray-color: #424242
+    --secondary-gray-color: #424242;
+    --input-color: #B7B7B7;
 }
 
 body {
