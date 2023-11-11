@@ -10,7 +10,7 @@ main {
     grid-template-columns: auto auto;
     align-content: start;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     justify-content: space-evenly;
 }
 

@@ -10,7 +10,7 @@ ul {
     align-items: center;
     background: linear-gradient(180deg, #562488 0%, rgba(120.06, 19.51, 98.26, 0.97) 100%);
     color: var(--primary-light-color);
-    overflow: scroll;
+    overflow: auto;
 }
 
 .aside__profile__image{

@@ -8,8 +8,9 @@ main {
     background: #E3E6E8;
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: 10rem;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 header{

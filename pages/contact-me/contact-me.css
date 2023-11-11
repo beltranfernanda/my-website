@@ -9,7 +9,7 @@ main {
     display: grid;
     grid-template-columns: auto;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     justify-items: center;
     align-content: center;
 }
