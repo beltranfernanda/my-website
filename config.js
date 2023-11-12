@@ -1,5 +1,5 @@
 export const config = {
-    production: false,
+    production: true,
     urlPrefix: 'my-website',
     home: 'pages/portfolio/portfolio.html',
 }
