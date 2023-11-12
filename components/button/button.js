@@ -3,13 +3,38 @@ import { getAbsoluteURL } from "../../common/util.js";
 class Button extends HTMLElement {
     constructor() {
       super();
+      this.attachShadow({ mode: "open" });
     }
 
+
     connectedCallback() {
-        const shadow = this.attachShadow({ mode: "open" });
-    
-        let button;
-    
+        this.render();
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (oldValue !== newValue) {
+            this.render();
+        }
+    }
+
+    static get observedAttributes() {
+        return ['url', 'type', 'text'];
+    }
+
+    render() {    
+        const button = this.createButton();
+        const style = document.createElement("style");
+        style.textContent = `@import url(${getAbsoluteURL("components/button/button.css")});`;
+
+        const shadow = this.shadowRoot;
+        shadow.innerHTML = '';
+        shadow.appendChild(style);
+        shadow.appendChild(button);
+    }
+
+    createButton() {
+        let button
+
         if (this.hasAttribute("type") && this.getAttribute("type")=="link"){
             button = document.createElement("a")
             button.setAttribute("href",this.hasAttribute("url") ? this.getAttribute("url") : "#")
@@ -21,13 +46,9 @@ class Button extends HTMLElement {
         button.textContent = this.hasAttribute("text") ? this.getAttribute("text") : "default"
         button.setAttribute("class", "button button-primary")
         button.setAttribute("type", "submit")
-    
-        const style = document.createElement("style");
-        style.textContent = `@import url(${getAbsoluteURL("components/button/button.css")});`
-    
-        shadow.appendChild(style)
-        shadow.appendChild(button)
-      }
+
+        return button
+    }
   }
   
   customElements.define("button-primary", Button);

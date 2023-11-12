@@ -3,6 +3,7 @@ import { getAllProjectsData } from "../../services/project-service.js";
 async function renderPortfolioCards(){
     const data = await getAllProjectsData();
     let rootContainer = document.getElementById("portfolio-root");
+    
     data.forEach((item) => {
         let cardProject = document.createElement("card-project");
         cardProject.setAttribute("title", item.title);
