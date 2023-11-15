@@ -1,7 +1,8 @@
 import { getAbsoluteURL } from "../common/util.js";
 
-export async function getAllProjectsData() {
-    const url = getAbsoluteURL("assets/data-portfolio.json");
+
+export async function getAllBlogsData() {
+    const url = getAbsoluteURL("assets/data-blog.json");
     try {
         const res = await fetch(url);
         return await res.json();

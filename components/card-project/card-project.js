@@ -14,7 +14,7 @@ class Card extends HTMLElement {
         </div>
         <div class="card__content">
             <h2 class="card__content__title">${props.title}</h2>
-            <p class="card__content__date">${props.date}</p>
+            <p class="card__content__stack">${props.stack}</p>
             <p class="card__content__description">${props.description}</p>
         </div>
     </div>
@@ -29,7 +29,7 @@ class Card extends HTMLElement {
     return {
         imageURL: this.hasAttribute("img-url") ? this.getAttribute("img-url") : "",
         title: this.hasAttribute("title") ? this.getAttribute("title") : "",
-        date: this.hasAttribute("date") ? this.getAttribute("date") : "",
+        stack: this.hasAttribute("stack") ? this.getAttribute("stack") : "",
         description: this.hasAttribute("description") ? this.getAttribute("description") : "",
     }
   }

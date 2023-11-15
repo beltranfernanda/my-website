@@ -38,6 +38,7 @@ class Button extends HTMLElement {
         if (this.hasAttribute("type") && this.getAttribute("type")=="link"){
             button = document.createElement("a")
             button.setAttribute("href",this.hasAttribute("url") ? this.getAttribute("url") : "#")
+            button.setAttribute("target",this.hasAttribute("target") ? this.getAttribute("target") : "")
         } else {
             button = document.createElement("button")
             button.setAttribute("id",this.hasAttribute("id") ? this.getAttribute("id") : "default")

@@ -31,8 +31,13 @@
  .card-blog__content__title {
      font-size: 1.75rem;
      font-weight: 700;
-     margin-bottom: 16px;
+     margin-bottom: 5px;
  }
+
+ .card-blog__content__date {
+    font-weight: lighter;
+    margin-bottom: 16px;
+}
 
  .card-blog__content__description {
      line-height: 23px;

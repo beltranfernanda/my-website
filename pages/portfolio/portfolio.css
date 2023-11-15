@@ -8,9 +8,11 @@ main {
     background: #E3E6E8;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 10rem;
+    grid-template-rows: 6rem;
     height: 100%;
     overflow: auto;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 header{
@@ -28,6 +30,15 @@ header{
 
 .cards__container {
     display: grid;
+}
+
+.card-project:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.card-project {
+    transition: 0.5s all ease;
 }
 
 @media only screen and (max-width: 1024px) {
