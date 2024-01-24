@@ -4,13 +4,19 @@
     --primary-light-color: #fff;
     --secondary-gray-color: #424242;
     --input-color: #B7B7B7;
+    --brand-primary-color: #5E2281;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: clip;
 }
 
 a {
     all: unset;
     cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

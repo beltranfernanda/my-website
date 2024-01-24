@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
     <body>
         <div id="root">
@@ -18,7 +18,7 @@
                 <header>
                     <h1 class="header__title">Contact Me</h1>
                 </header>
-                <form action="">
+                <form action="" id="contact-form">
                     <div class="form">
                         <h2 class="form__title">Send me a message</h2>
                         <div class="form__input form__name">
@@ -37,12 +37,14 @@
                             <textarea class="form__input" placeholder="Your message goes here ..." id="message" name="message" rows="8" 
                             cols="50"></textarea>
                         </div>
-                        <button-primary text="Send message"></button-primary>
+                        <button-primary id="submit-button" text="Send message"></button-primary>
                     </div>
                 </form>
             </main>
         </div>
     </body>
+    <script src="../../components/loader/loader.js" type="module"></script>
     <script src="../../components/button/button.js" type="module"></script>
     <script src="../../components/navbar/navbar.js" type="module"></script>
+    <script src="./contact-me.js" type="module"></script>
 </html>
