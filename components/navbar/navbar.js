@@ -20,7 +20,13 @@ class Navbar extends HTMLElement {
             </div>
             <div class="aside__description">
                 <h1 class="aside__description__title">Maria Fernanda Velandia Beltran</h1>
-                <p class="aside__description__paragraph">Hi, I’m Fernanda and this is information about me. Hi, I’m Fernanda and this is information about me. Hi, I’m Fernanda and this is information about me.</p>
+                <h2 class="aside__description__subtitle"><h2>
+                <p class="aside__description__paragraph">Hi, I’m Maria — a dreamer 🚀 💖, 
+                coffee lover ☕, software developer 👩🏽‍💻, and lifelong learner 🤓.</p>
+                <br>
+                <p class="aside__description__paragraph">I’m thrilled that you’re here to discover more about me and my journey. 
+                If you believe I can contribute to you or your organization, please don’t hesitate 
+                to reach out through the “Contact Me” section or via my social media profiles.</p>
             </div>
             <nav class="aside__menu">
                 <ul class="aside__menu__list">

@@ -20,3 +20,8 @@ a {
 .no-scroll {
     overflow: hidden;
 }
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}

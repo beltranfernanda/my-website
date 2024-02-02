@@ -37,7 +37,7 @@ header{
     width: 100%;
 }
 
-.about__container__title {
+.about-title {
     margin: 1rem 0;
     color: var(--secondary-gray-color);
     font-size: 2rem;
@@ -47,7 +47,7 @@ header{
     word-wrap: break-word;
 }
 
-.about__container__description {
+.about-description {
     color: var(--secondary-gray-color);
     font-size: 1rem;
     font-family: Roboto;
