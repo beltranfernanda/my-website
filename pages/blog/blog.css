@@ -7,7 +7,7 @@
 main {
     background: #E3E6E8;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     align-content: start;
     height: 100%;
     overflow: auto;

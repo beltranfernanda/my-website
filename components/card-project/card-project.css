@@ -2,7 +2,7 @@
     background: #FFFEFF;
     color: var(--secondary-gray-color);
     border-radius: 20px;
-    min-height: 360px;
+    height: 100%;
  }
  
  .card__header {

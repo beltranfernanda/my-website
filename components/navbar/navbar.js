@@ -26,7 +26,8 @@ class Navbar extends HTMLElement {
                 <br>
                 <p class="aside__description__paragraph">I’m thrilled that you’re here to discover more about me and my journey. 
                 If you believe I can contribute to you or your organization, please don’t hesitate 
-                to reach out through the “Contact Me” section or via my social media profiles.</p>
+                to reach out through the <a class="text-link" href="${getAbsoluteURL("pages/contact-me/contact-me.html")}">Contact Me</a> 
+                section or via my social media profiles.</p>
             </div>
             <nav class="aside__menu">
                 <ul class="aside__menu__list">

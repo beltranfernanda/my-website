@@ -1,50 +1,18 @@
 [
     {
         "id": "1",
-        "title": "This is the title",
-        "imageURL": "assets/golang-project.png",
-        "stack": ["php","java","golang"],
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
+        "title": "My webpage",
+        "imageURL": "assets/my-webpage.png",
+        "stack": ["javascript","css","html"],
+        "description": "My personal webpage serves as a platform to showcase my projects and establish a communication channel with visitors.",
+        "redirect": "https://github.com/beltranfernanda/my-website"
     },
     {
         "id": "2",
-        "title": "This is the title",
-        "imageURL": "assets/golang-project.png",
-        "stack": ["php","java","golang"],
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
-    },
-    {
-        "id": "3",
-        "title": "This is the title",
-        "imageURL": "assets/golang-project.png",
-        "stack": ["php","java","golang"],
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
-    },
-    {
-        "id": "4",
-        "title": "This is the title",
-        "imageURL": "assets/golang-project.png",
-        "stack": ["php","java","golang"],
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
-    },
-    {
-        "id": "5",
-        "title": "This is the title",
-        "imageURL": "assets/golang-project.png",
-        "stack": ["php","java","golang"],
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
-    },
-    {
-        "id": "6",
-        "title": "This is the title",
-        "imageURL": "assets/golang-project.png",
-        "stack": ["php","java","golang"],
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
+        "title": "Email server",
+        "imageURL": "assets/email-server.png",
+        "stack": ["python","flask","azure"],
+        "description": "The backend solution for my personal webpage enables users to send me emails through the contact form, utilizing HMAC encryption to secure the service.",
+        "redirect": "https://github.com/beltranfernanda/email-server"
     }
 ]

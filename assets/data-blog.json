@@ -1,50 +1,10 @@
 [
     {
         "id": "1",
-        "title": "Title blog article",
+        "title": "Coming soon",
         "imageURL": "assets/java-blog.png",
-        "date": "November 13, 2023",
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
-    },
-    {
-        "id": "2",
-        "title": "Title blog article",
-        "imageURL": "assets/java-blog.png",
-        "date": "November 13, 2023",
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
-    },
-    {
-        "id": "3",
-        "title": "Title blog article",
-        "imageURL": "assets/java-blog.png",
-        "date": "November 13, 2023",
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
-    },
-    {
-        "id": "4",
-        "title": "Title blog article",
-        "imageURL": "assets/java-blog.png",
-        "date": "November 13, 2023",
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
-    },
-    {
-        "id": "5",
-        "title": "Title blog article",
-        "imageURL": "assets/java-blog.png",
-        "date": "November 13, 2023",
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
-        "redirect": "#"
-    },
-    {
-        "id": "6",
-        "title": "Title blog article",
-        "imageURL": "assets/java-blog.png",
-        "date": "November 13, 2023",
-        "description": "Minim dolor in amet nulla laboris enim dolore consequat proident fugiat culpa eiusmod.",
+        "date": "",
+        "description": "",
         "redirect": "#"
     }
 ]
